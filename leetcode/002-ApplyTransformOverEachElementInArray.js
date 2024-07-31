@@ -25,8 +25,6 @@ Example 3:
 
 ********************************************************************************************/
 
-
-
 function plusOne(number) {
     return number + 1
 }
@@ -40,15 +38,25 @@ function constant() {
 }
 
 function map(arr, fn) {
+    for (let i = 0; i < arr.length; ++i) {
+        arr[i] = fn(arr[i], i);
+    }
+    return arr;
+}
+
+console.log(map([1, 2, 3], plusOne));
+console.log(map([1, 2, 3, 4], plusI));
+console.log(map([10, 20, 30], constant));
+
+
+
+// My Old Implementation
+/*
+function map(arr, fn) {
     let array = [];
 
     for (let i = 0; i < arr.length; i++) {
         (fn.length === 2) ? array.push(fn(arr[i], i)) : array.push(fn(arr[i]))
     }
     return array;
-}
-
-
-console.log(map([1, 2, 3], plusOne));
-console.log(map([1, 2, 3, 4], plusI));
-console.log(map([10, 20, 30], constant));
+}  */
