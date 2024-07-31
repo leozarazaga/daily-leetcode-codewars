@@ -23,7 +23,6 @@ Explanation: 5 !== null so this expression returns true.
 */
 
 
-
 function expect(val) {
     const originalValue = val;
 
@@ -39,6 +38,5 @@ function expect(val) {
         }
     }
 }
-
 
 console.log(expect(5).toBe(5));
