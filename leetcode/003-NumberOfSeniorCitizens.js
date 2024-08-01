@@ -23,7 +23,7 @@ Example 2:
 
 ********************************************************************************************/
 
-function countSeniors(details) {
+/* function countSeniors(details) {
     let result = details
         .map((value) => {
             const age = value.substring(11, 13);
@@ -33,10 +33,26 @@ function countSeniors(details) {
         .length;
 
     return result;
-};
+}; */
 
 
 let details1 = ["7868190130M7522", "5303914400F9211", "9273338290F4010"];
 let details2 = ["1313579440F2036", "2921522980M5644"];
 console.log(countSeniors(details1));
 console.log(countSeniors(details2));
+
+
+/********************************************************************************************/
+
+//Second Approach
+/* function countSeniors(details) {
+    let count = 0;
+    for (let i = 0; i < details.length; i++) {
+        let age = parseInt(details[i].slice(11, 13));
+        if (age > 60) {
+            count++;
+        }
+    }
+    return count;
+} */
+
