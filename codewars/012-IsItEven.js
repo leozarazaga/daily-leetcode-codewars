@@ -13,7 +13,18 @@ Floats with decimal part non equal to zero are considered UNeven for this kata.
 ********************************************************************************************/
 
 function testEven(n) {
-    return (n % 2 === 0) ? true : false;
+    return (n % 2 === 0)
 }
 
 console.log(testEven(5));
+
+/********************************************************************************************/
+
+
+//First Approach
+
+/* 
+function testEven(n) {
+    return (n % 2 === 0) ? true : false;
+}
+*/
