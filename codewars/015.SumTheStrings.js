@@ -15,11 +15,22 @@ Example: (Input1, Input2 --> Output)
 ********************************************************************************************/
 
 function sumStr(a, b) {
-    let num1 = parseInt(a || '0');
-    let num2 = parseInt(b || '0');
-    return (num1 + num2).toString();
+    return String(Number(a) + Number(b));
 }
 
 console.log(sumStr("4", "5"));
 console.log(sumStr("34", "5"));
 console.log(sumStr("", ""));
+
+/********************************************************************************************/
+
+//First Approach
+
+/* 
+function sumStr(a, b) {
+    let num1 = parseInt(a || '0');
+    let num2 = parseInt(b || '0');
+    return (num1 + num2).toString();
+}
+*/
+
