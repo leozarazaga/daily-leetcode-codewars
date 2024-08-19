@@ -76,15 +76,5 @@ var romanToInt = function (s) {
 let input = "MCMXCIV";
 console.log(romanToInt(input));
 
-/********************************************************************************************/
 
-//First Approach
-
-/* 
-function sumStr(a, b) {
-    let num1 = parseInt(a || '0');
-    let num2 = parseInt(b || '0');
-    return (num1 + num2).toString();
-}
-*/
 
