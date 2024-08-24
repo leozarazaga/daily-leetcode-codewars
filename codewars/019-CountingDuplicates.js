@@ -22,6 +22,22 @@ Example
 ********************************************************************************************/
 
 function duplicateCount(text) {
+    let count = text.toLowerCase().split("").reduce((acc, i) => {
+        (acc[i]) ? acc[i] += 1 : acc[i] = 1;
+        return acc;
+    }, {})
+    return Object.keys(count).filter((key) => count[key] > 1).length;
+}
+
+console.log(duplicateCount("indivisibility"));
+console.log(duplicateCount("ABBA"));
+//Time: 801ms 
+
+/********************************************************************************************/
+
+//FIRST APPROACH
+
+/* function duplicateCount(text) {
     let object = {}
     let lowerText = text.toLowerCase();
 
@@ -40,12 +56,4 @@ function duplicateCount(text) {
 
     console.log(object);
     return counter;
-}
-
-let x = "indivisibility"
-console.log(duplicateCount(x));
-
-let y = "ABBA";
-console.log(duplicateCount(y));
-
-//Time: 801ms 
+} */
