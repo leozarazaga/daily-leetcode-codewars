@@ -33,4 +33,4 @@ function findOdd(array) {
 
 let x = [1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1];
 console.log(findOdd(x));
-//Time: 801ms 
+//Time: 786ms
