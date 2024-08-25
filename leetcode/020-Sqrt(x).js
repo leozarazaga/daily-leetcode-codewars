@@ -23,18 +23,14 @@ Example 2:
 ********************************************************************************************/
 
 var mySqrt = function (x) {
-    var mySqrt = function (x) {
-        if (x == 0 || x == 1) return x;
-    
-        for (let i = 1; i <= x / 2 + 1; i++) {
-            if (i * i == x) {
-                return i;
-            }
-            if (i * i > x) return i - 1;
+    if (x == 0 || x == 1) return x;
+
+    for (let i = 1; i <= x / 2 + 1; i++) {
+        if (i * i == x) {
+            return i;
         }
-    };
-    
-    console.log(mySqrt(8));
+        if (i * i > x) return i - 1;
+    }
 };
 
 console.log(mySqrt(8));
