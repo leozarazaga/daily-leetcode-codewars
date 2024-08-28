@@ -30,14 +30,14 @@ Example 3:
 
 var isPalindrome = function (s) {
 
-    let newString = s.toLowerCase().replace(/[^a-z]/g, "");
-    let reverseString = newString.split("").reverse().join("");
-    
-    return newString === reverseString;
+    let filteredString = s.toLowerCase().replace(/[^0-9a-zA-Z]/g, "");
+    let reverseString = filteredString.split("").reverse().join("");
+
+    return filteredString === reverseString;
 };
 
 
 console.log(isPalindrome("A man, a plan, a canal: Panama"));
 console.log(isPalindrome("race a car"));
-console.log(isPalindrome(""));
-//Runtime: 58ms
+console.log(isPalindrome("0p"));
+//Runtime: 53ms
